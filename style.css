@@ -201,9 +201,9 @@ html {
 
 /* Cookie */
 .cookie {
+  top: 0;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
   z-index: 3;
   background-color: #e5e5e5;
   padding: 0.75rem;
@@ -211,6 +211,7 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease-in-out;
 }
 
 .cookie .container {
@@ -255,6 +256,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  transition: all 0.5s ease-in-out;
 }
 
 .hero .logo {
@@ -317,6 +319,30 @@ html {
 .highlight svg {
   color: #adacac;
 }
+
+/* Footer */
+footer {
+  background-color: #004a75;
+  color: #e5e5e5;
+  text-align: center;
+  padding: 2rem;
+}
+
 /* Transition */
+.slide-up {
+  transition: all 0.3s ease-out;
+}
 
 /* Mobile Responsive */
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+}
+
+@media (max-width: 639px) {
+}

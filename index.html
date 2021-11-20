@@ -12,9 +12,6 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css"
     />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/js/all.min.js"></script>
-    <script src="./main.js"></script>
   </head>
   <body>
     <!-- Cookie -->
@@ -27,7 +24,7 @@
           <span class="font-semibold darkblue">Privacy Policy,</span> and our
           <span class="font-semibold darkblue">Terms of Service.</span>
         </span>
-        <button class="cookie-cta">Got it</button>
+        <button class="cookie-cta" onclick="hideCookie()">Got it</button>
       </div>
     </section>
 
@@ -154,9 +151,17 @@
       </div>
     </section>
 
+    <!-- Newsletter -->
+    <div id="newsletter" class="newsletter"></div>
+
     <!-- Footer -->
-    <section id="footer" class="footer">
-      <div></div>
-    </section>
+    <footer>
+      <span class="text-base font-normal">
+        &copy; <span id="year"></span> Adif Maulana. All rights reserved.
+      </span>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/js/all.min.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

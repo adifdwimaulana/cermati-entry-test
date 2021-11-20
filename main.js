@@ -29,14 +29,17 @@ function getScrollPercentage() {
 }
 
 window.onscroll = () => {
-  const closedAt = new Date(localStorage.getItem("closed_at"));
+  const cacheDate = localStorage.getItem("closed_at");
+  const closedAt = new Date(cacheDate);
   const now = new Date();
 
   const minutes = parseInt(
     (Math.abs(now.getTime() - closedAt.getTime()) / (1000 * 60)) % 60
   );
 
-  if (minutes >= 10 && getScrollPercentage() > 33.3) {
-    newsletter.style.transform = "translateY(0)";
+  if (getScrollPercentage() > 33.3) {
+    if (minutes >= 10 || !cacheDate) {
+      newsletter.style.transform = "translateY(0)";
+    }
   }
 };

@@ -152,7 +152,28 @@
     </section>
 
     <!-- Newsletter -->
-    <div id="newsletter" class="newsletter"></div>
+    <div id="newsletter" class="newsletter">
+      <div class="flex flex-row justify-end">
+        <i
+          class="fas fa-times text-xs white pointer"
+          onclick="hideNewsletter()"
+        ></i>
+      </div>
+      <div class="content space-y-3">
+        <span class="text-lg font-medium white">
+          Get latest updates in web technologies
+        </span>
+        <span class="text-sm font-normal white">
+          I write articles related to web technologies, such as design trends,
+          development tools, UI/UX case studies and reviews, and more. Sign up
+          to my newsletter to get them all.
+        </span>
+        <div class="action space-x-4">
+          <input type="email" placeholder="Email address" />
+          <button class="pointer">Count me in!</button>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer>
